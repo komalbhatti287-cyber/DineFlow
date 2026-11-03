@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>DineFlow | Restaurant OS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <div class="brand">
+          <span class="brand-mark">✦</span>
+          <div>DINEFLOW<small>RESTAURANT OS</small></div>
+        </div>
+        <div class="nav-label">WORKSPACE</div>
+        <button class="nav active" data-page="dashboard">
+          ▦ <span>Overview</span></button
+        ><button class="nav" data-page="menu">◈ <span>Menu studio</span></button
+        ><button class="nav" data-page="tables">
+          ▤ <span>Floor & tables</span></button
+        ><button class="nav" data-page="orders">
+          ＋ <span>Orders & billing</span>
+        </button>
+        <div class="side-bottom">
+          <div class="avatar">DF</div>
+          <div><b>Restaurant Admin</b><small>Manager workspace</small></div>
+        </div>
+      </aside>
+      <main class="main">
+        <header class="topbar">
+          <div>
+            <span class="eyebrow">MONDAY SERVICE • LIVE OPERATIONS</span>
+            <h1 id="pageTitle">Good evening, Chef <span>✦</span></h1>
+          </div>
+          <div class="top-actions">
+            <span id="dbStatus" class="status"><i></i> CONNECTING</span
+            ><button class="icon-btn" id="refreshBtn">↻</button>
+            <div class="profile">A</div>
+          </div>
+        </header>
+        <section id="content" class="content">
+          <div class="loading">Preparing your workspace…</div>
+        </section>
+      </main>
+    </div>
+    <div id="toast" class="toast"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
